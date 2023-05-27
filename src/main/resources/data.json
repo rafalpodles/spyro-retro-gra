@@ -1,15 +1,15 @@
 [
   {
     "endpoint": "init",
-    "message":"Hej, jak miło, że wpadliście. Mam wielki problem. Zaginął mi przyjaciel. Pomożecie mi go odnaleźć. Wprowadźcie hasło z mapy, a pokażę wam, gdzie może teraz przebywać.",
+    "message": "Hej, jak miło, że wpadliście. Mam wielki problem. Zaginął mój najlepszy przyjaciel. Pomożecie mi go odszukać? Wprowadźcie hasło z mapy, a pokażę wam, gdzie zazwyczaj przebywa.",
     "password": "spyrosoft synergy retro",
     "image": "/assets/init.png",
     "alt": "Drzewo obok kręg w parku przy TP",
-    "hint": "Ostatnio kręcił się w parku w okolicy Technoparku, może byś pomógł mi go odnaleźć? Tylko pamiętaj. On ma 4 łapy i jest bardzo szybki, zatem Wy również musisz być bardzo szybcy."
+    "hint": "Ostatnio kręcił się w parku w okolicy Technoparku, może byście tam zerknęli i pomogli mi go odnaleźć? Tylko pamiętajcie, on ma 4 łapy i jest bardzo szybki, zatem Wy również musicie być bardzo szybcy."
   },
   {
     "endpoint": "UGFyayBUUA",
-    "message":"Kurza twarz! Tu jednak go nie ma. Mówiłem, że jest szybki! Wiecie, dlaczego uwielbiał przesiadywać w tym parku? Nieopodal siedzibę ma pewna firma. Jak się nazywa?",
+    "message": "Kurza twarz! Tu jednak go nie ma. Mówiłem, że jest szybki! Wiecie, dlaczego uwielbiał przesiadywać w tym parku? Nieopodal siedzibę ma pewna firma. Jak się nazywa?",
     "password": "spyrosoft;spyrosoft synergy;synergy",
     "image": "/assets/UGFyayBUUA.png",
     "alt": "M obok muzeum techniki.",
@@ -17,27 +17,75 @@
   },
   {
     "endpoint": "Rm9udGFubmE",
-    "message":"Znowu nam uciekł. Pamiętam jak kiedyś przychodził tutaj, żeby oglądać duże pojazdy w miejscu, obok którego stoisz. Wiecie jak nazywa się to miejsce?",
-    "password": "muzeum techniki",
+    "message": "Znowu nam uciekł. Pamiętam jak kiedyś przychodził tutaj, żeby oglądać duże pojazdy w miejscu, obok którego stoisz. Wiecie, jak nazywa się to miejsce?",
+    "password": "muzeum techniki; muzeum techniki i komunikacji",
     "image": "/assets/Rm9udGFubmE.png",
     "alt": "Ciuchcia na placu zabaw",
-    "hint": "Tak, to Muzeum Techniki. Skoro już przy dużych pojazdach jesteśmy, nasz ognisty przyjaciel bardzo lubił szybkie pociągi. Zwłaszcza dokładać ognia do pieca lokomotywy. Myślę, że tam on możecie go znaleźć jak jeździ lokomotywą. Mapka powinna Wam pomóc w odnalezieniu tego miejsca."
+    "hint": "Tak, to Muzeum Techniki. Skoro już przy dużych pojazdach jesteśmy, nasz ognisty przyjaciel bardzo lubił szybkie pociągi. Zwłaszcza dokładać ognia do pieca lokomotywy. Myślę, że tam możecie go znaleźć tam, gdzie zazwyczaj jeździł lokomotywą. Mapka powinna Wam pomóc w odnalezieniu tego miejsca."
   },
   {
     "endpoint": "Q2l1Y2hjaWE",
-    "message":"Oj tak, lubił tutaj przesiadywać i prowadzić tę ciuchcię. Wsiadałem wtedy do wagonika i wyobrażałem sobie jak przemierzamy po torach odległe krainy. Nie wiem, czy wiecie, ale pod naszym składem ciągnie się coś ciekawego. Wiecie co to jest?",
+    "message": "Oj tak, lubił tutaj przesiadywać i prowadzić tę ciuchcię. Wsiadałem wtedy do wagonika i wyobrażałem sobie jak przemierzamy po torach odległe krainy. Nie wiem, czy wiecie, ale pod naszym składem ciągnie się coś ciekawego. Wiecie co to jest?",
     "password": "bunkier",
     "image": "/assets/Q2l1Y2hjaWE.png",
     "alt": "Surfer na siłowni pod chmurką",
-    "hint": "O tak, to jest bunkier. Bunkrów tutaj jest pełno, są one bardzo niebezpieczne, nie można do nich wchodzić, dlatego są zamurowane. Jeśli będziecie bardzo spostrzegawczy, to możecie zdobyć dodatkowy punkt. Wracając do poszukiwan naszego przyjaciela, to lubił on bardzo niebezpieczne zajęcia. Jednym z nich było surfowanie. Może właśnie teraz surfuje?"
+    "hint": "O tak, to jest bunkier. Bunkrów tutaj jest pełno, są one bardzo niebezpieczne, nie można do nich wchodzić, dlatego są zamurowane. Jeśli będziecie bardzo spostrzegawczy, to możecie zdobyć dodatkowy punkt. Wracając do poszukiwań naszego przyjaciela, to lubił on bardzo niebezpieczne zajęcia. Jednym z nich było surfowanie. Może właśnie teraz surfuje?"
   },
   {
     "endpoint": "U3VyZmVy",
-    "message":"Widzę, że znalazłeś miejsce, gdzie sufrował nasz koleżka. Niestety teraz go tu już nie ma. Jest natomiast informacja, jak o największym obciążeniu surfera.",
+    "message": "Widzę, że znalazłeś miejsce, gdzie sufrował nasz koleżka. Niestety teraz go tu już nie ma. Jest natomiast informacja o największym obciążeniu surfera.",
     "password": "120;120kg",
     "image": "/assets/U3VyZmVy.png",
     "alt": "Ważki obok punktu",
-    "hint": "Nasz kolega jest trochę cięższy niż 120kg. To mu jednak nigdy nie przeszkadzało we wzbijaniu się w powietrze niczym zwierzątka, które znajdziecie w następnym punkcie."
+    "hint": "Nasz kolega jest trochę cięższy niż 120 kg. To mu jednak nigdy nie przeszkadzało w wzbijaniu się w powietrze, niczym zwierzątka, które znajdziecie w następnym punkcie."
+  },
+  {
+    "endpoint": "V2F6a2k",
+    "message": "Tak, dobrze widzisz, ważki mają wiele wspólnego z naszym kolegą i również wskazują kierunek, w którym mógł ruszyć nasz przyjaciel. Wiecie co to jest za kierunek?",
+    "password": "południowy-wschód;południowy wschód;poludniowy-wschod;poludniowy wschod",
+    "image": "/assets/V2F6a2k.png",
+    "alt": "Tablica jak dokarmiać ptaki",
+    "hint": "Dobrze, myślę, że w tym kierunku pobiegł nasz kolega na tych swoich żółtych pazurkach. W tamtym miejscu przesiadywał i podziwiał pewne zwierzątka, ale jakie to już się przekonacie na miejscu."
+  },
+  {
+    "endpoint": "S2Fjemtp",
+    "message": "Ptaki, a w tym kaczki, które tu pływają były bardzo często podziwiane przez naszego przyjaciela. On niestety nie umie pływać, ale potrafi latać, tak jak kaczki. Przychodząc tutaj, często zabierał ze sobą jedzenie dla ptaków. Wiecie co to mogło być?",
+    "password": "ziarno; ziarna; ziarno zbożowe; ziarna zbożowe; ziarno zbozowe; ziarna zbozowe",
+    "image": "/assets/S2Fjemtp.png",
+    "alt": "Pomnik orłów",
+    "hint": "Dokładnie. Pamiętajmy o tym, żeby kaczek nie dokarmiać pieczywem, bo to nie jest dla nich zdrowe. Nieopodal są jeszcze inne ptaki, ale te już są trochę większe. Od zawsze były inspiracją dla naszego rogatego przyjaciela. Może wciąż tam stoi i je podziwia?"
+  },
+  {
+    "endpoint": "T3JseQ",
+    "message": "Cholibka. Tutaj też go nie ma. Chyba ciężko będzie nam go dopaść. No dobra, ale nie poddawajmy się. Coś czuję, że już blisko. Tymczasem zerknijcie na te 3 ogromne ptaki. Są one prawie wielkości naszego kolegi. Sami przyznacie, że pomnik jest ogromny. Wiecie jaką ma wysokość?",
+    "password": "22.5m;22m;22,5m;22;22,5",
+    "image": "/assets/T3JseQ.png",
+    "alt": "Ogniste ptaki",
+    "hint": "Wysokość jest imponująca, nieprawdaż? Pozostając przy tematach ptaków, w tym parku są jeszcze jedne ptaki. Może tam teraz jest nasz uciekinier? Wiecie, gdzie te ptaki mogą się znajdować? Szukajcie tych trójgłowych."
+  },
+  {
+    "endpoint": "UHRha2k",
+    "message": "Znaleźliście! Ale niestety tylko ptaki. Naszego przyjaciela, mimo, że jest do nich bardzo podobny, bo również jest niezwykłą istotą, tutaj również nie ma. Powoli kończą mi się pomysły, gdzie go szukać. Chociaż... przypomina mi się jeszcze jedno ciekawe miejsce, gdzie go mogło wywiać. Do tego będzie nam potrzebna ilość szprych, które są w rowerkach, na których jadą ptaki.",
+    "password": "73",
+    "image": "/assets/UHRha2k.png",
+    "alt": "Punkt widokowy",
+    "hint": "Dobrze policzyliście! Teraz możemy udać się za zachód, by tam poszukać naszego nicponia z irokezem. Jest tam pewne miejsce, skąd bardzo często startował nasz kolega. Może jeszcze nie wystartował i da się go tam uchwycić?"
+  },
+  {
+    "endpoint": "V2lkb2s",
+    "message": "Wszystko, gdyby nie te drzewa. Ostatnim razem jak tu byłem z naszym kolegą to był fajny widok i możliwość swobodnego startu. Ale... wydaje mi się, że on tutaj niedawno był. Zobaczcie jakie spustoszenie pozostawił swoim ogonem w murze. Potrafilibyście policzyć ubytki?",
+    "password": "9",
+    "image": "/assets/V2lkb2s.png",
+    "alt": "Placeholder for Punkt I (Widok)",
+    "hint": "Mówiłem, że nasz kolega jest bardzo duży i ciężki. Stąd pewnie tyle zniszczeń. Mam chyba ostatni pomysł, gdzie ten nasz żółto-fioletowy stwór może się znajdować. Chwytajcie mapy w rękę i chodźmy na południe, czas się przejechać dorożką!"
+  },
+  {
+    "endpoint": "RG9yb3prYQ",
+    "message": "No niestety. Mi się już skoczyły pomysły, gdzie go można znaleźć. Mam dla Was ostatnie zadanie, ale najpierw musicie mi powiedzieć, ile promieni ma słoneczko?",
+    "password": "10",
+    "image": "/assets/RG9yb3prYQ.png",
+    "alt": "Inku Placeholder",
+    "hint": "No dobra, chyba go już nie odnajdziemy bez pomocy. Trzeba będzie narysować jego portret pamięciowy. Pamiętacie, jak opisywałem jego cechy? Usiądźcie sobie zatem wygodnie na ławeczce i postaracie się narysować go tak jak wydaje wam się, że wygląda. Z tym portretem udajcie się do Inku. Ludzie na miejscu będą wiedzieli co z tym zrobić."
   },
   {
     "endpoint": "bonus",
