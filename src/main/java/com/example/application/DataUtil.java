@@ -3,14 +3,12 @@ package com.example.application;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class DataUtil {
-
 
     private static List<Data> data;
 
@@ -21,14 +19,14 @@ public class DataUtil {
         return data;
     }
 
-    public static Data getByEndpoint(String endpoint){
+    public static Data getByEndpoint(String endpoint) {
         if (data == null) {
             loadData();
         }
-        return data.stream().filter(d-> Objects.equals(d.getEndpoint(), endpoint)).findFirst().orElseThrow();
+        return data.stream().filter(d -> Objects.equals(d.getEndpoint(), endpoint)).findFirst().orElseThrow();
     }
 
-    public static List<String> getAllEndpoints(){
+    public static List<String> getAllEndpoints() {
         if (data == null) {
             loadData();
         }
@@ -37,10 +35,13 @@ public class DataUtil {
 
 
     private static void loadData() {
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            File jsonFile = new File("src/main/resources/data.json");
-            data = objectMapper.readValue(jsonFile, new TypeReference<List<Data>>() {});
+        ObjectMapper objectMapper = new ObjectMapper();
+        try (InputStream inputStream = DataUtil.class.getResourceAsStream("/data.json");
+             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+            String contents = reader.lines()
+                    .collect(Collectors.joining(System.lineSeparator()));
+            data = objectMapper.readValue(contents, new TypeReference<List<Data>>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }

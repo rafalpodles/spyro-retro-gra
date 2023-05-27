@@ -26,7 +26,7 @@ public class IntroView extends VerticalLayout {
         Button submitButton = new Button("Zatwierdź", event -> {
             String inputValue = inputField.getValue();
             try{
-//                sendEmail(inputValue);
+                sendEmail(inputValue);
                 Text emailSentText = new Text("Czas wystartował!");
                 removeAll();
                 add(emailSentText);

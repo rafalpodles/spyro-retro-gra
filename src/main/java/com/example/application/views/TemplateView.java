@@ -33,20 +33,25 @@ public class TemplateView extends VerticalLayout implements RouterLayout, HasUrl
             Text t = new Text("Nic tu nie ma");
             add(t);
         }
+
         if (data != null) {
-            Data finalData = data;
-            Text text = new Text(data.getMessage());
-            TextField passwordField = new TextField("Hasło");
-            Button submitButton = new Button("Zatwierdź hasło", e -> {
-                String enteredPassword = passwordField.getValue();
-                String[] passwords = finalData.getPassword().split(";");
-                if (Arrays.stream(passwords).toList().contains(enteredPassword)) {
-                    passwordCorrect(finalData);
-                } else {
-                    Notification.show("Złe hasło!");
-                }
-            });
-            add(text, passwordField, submitButton);
+            if (data.getEndpoint().equals("bonus")) {
+                UI.getCurrent().navigate(BonusView.class);
+            } else {
+                Data finalData = data;
+                Text text = new Text(data.getMessage());
+                TextField passwordField = new TextField("Hasło");
+                Button submitButton = new Button("Zatwierdź hasło", e -> {
+                    String enteredPassword = passwordField.getValue();
+                    String[] passwords = finalData.getPassword().split(";");
+                    if (Arrays.stream(passwords).map(String::toLowerCase).toList().contains(enteredPassword.toLowerCase())) {
+                        passwordCorrect(finalData);
+                    } else {
+                        Notification.show("Złe hasło!");
+                    }
+                });
+                add(text, passwordField, submitButton);
+            }
         }
 
     }

@@ -38,5 +38,14 @@
     "image": "/assets/U3VyZmVy.png",
     "alt": "Ważki obok punktu",
     "hint": "Nasz kolega jest trochę cięższy niż 120kg. To mu jednak nigdy nie przeszkadzało we wzbijaniu się w powietrze niczym zwierzątka, które znajdziecie w następnym punkcie."
+  },
+  {
+    "endpoint": "bonus",
+    "message":"",
+    "password": "",
+    "image": "",
+    "alt": "",
+    "hint": ""
   }
+
 ]
