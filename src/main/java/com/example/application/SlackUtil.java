@@ -11,10 +11,16 @@ public class SlackUtil {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         String body = "{\"text\":\"" + message + "\"}";
+        System.out.println(body);
         HttpEntity<String> requestEntity = new HttpEntity<>(body, headers);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> responseEntity = restTemplate.exchange(slackUrl, HttpMethod.POST, requestEntity, String.class);
-        if (!responseEntity.getStatusCode().is2xxSuccessful()) {
+        if (responseEntity.getStatusCode().is2xxSuccessful()) {
+            System.out.println("All Good!");
+
+        } else{
+            System.out.println(responseEntity.getStatusCode().toString());
+            System.out.println(responseEntity.getBody());
             throw new Exception("Something was wrong!");
         }
     }

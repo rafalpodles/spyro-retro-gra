@@ -27,6 +27,7 @@ public class BonusView extends VerticalLayout {
             try {
                 sendSlack(inputField.getValue());
             } catch (Exception e) {
+                e.printStackTrace();
                 Notification.show("Krza twarz, coś poszło nie tak. Wyślij zdjęcie, gdzie znalazłeś bonus do Rafała.");
             }
             UI.getCurrent().navigate(MainView.class);
@@ -39,6 +40,8 @@ public class BonusView extends VerticalLayout {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String timeString = LocalTime.now().format(formatter);
         String body = "Bonus dla teamu " + teamName + ". Czas osiągnięcia bonusu: " + timeString;
+        System.out.println("Sending to slack folloowing message:");
+        System.out.println(body);
         SlackUtil.sendToChannel(body);
     }
 
