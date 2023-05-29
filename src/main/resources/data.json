@@ -2,7 +2,7 @@
   {
     "endpoint": "init",
     "message": "Hej, jak miło, że wpadliście. Mam wielki problem. Zaginął mój najlepszy przyjaciel. Pomożecie mi go odszukać? Wprowadźcie hasło z mapy, a pokażę wam, gdzie zazwyczaj przebywa.",
-    "password": "spyrosoft synergy retro",
+    "password": "synergy retro",
     "image": "/assets/init.png",
     "alt": "Drzewo obok kręg w parku przy TP",
     "hint": "Ostatnio kręcił się w parku w okolicy Technoparku, może byście tam zerknęli i pomogli mi go odnaleźć? Tylko pamiętajcie, on ma 4 łapy i jest bardzo szybki, zatem Wy również musicie być bardzo szybcy."
@@ -42,7 +42,7 @@
   {
     "endpoint": "V2F6a2k",
     "message": "Tak, dobrze widzisz, ważki mają wiele wspólnego z naszym kolegą i również wskazują kierunek, w którym mógł ruszyć nasz przyjaciel. Wiecie co to jest za kierunek?",
-    "password": "południowy-wschód;południowy wschód;poludniowy-wschod;poludniowy wschod",
+    "password": "południowy-wschód;południowy wschód;poludniowy-wschod;poludniowy wschod;południowy wschod",
     "image": "/assets/V2F6a2k.png",
     "alt": "Tablica jak dokarmiać ptaki",
     "hint": "Dobrze, myślę, że w tym kierunku pobiegł nasz kolega na tych swoich żółtych pazurkach. W tamtym miejscu przesiadywał i podziwiał pewne zwierzątka, ale jakie to już się przekonacie na miejscu."
@@ -86,14 +86,6 @@
     "image": "/assets/RG9yb3prYQ.png",
     "alt": "Inku Placeholder",
     "hint": "No dobra, chyba go już nie odnajdziemy bez pomocy. Trzeba będzie narysować jego portret pamięciowy. Pamiętacie, jak opisywałem jego cechy? Usiądźcie sobie zatem wygodnie na ławeczce i postaracie się narysować go tak jak wydaje wam się, że wygląda. Z tym portretem udajcie się do Inku. Ludzie na miejscu będą wiedzieli co z tym zrobić."
-  },
-  {
-    "endpoint": "bonus",
-    "message":"",
-    "password": "",
-    "image": "",
-    "alt": "",
-    "hint": ""
   }
 
 ]

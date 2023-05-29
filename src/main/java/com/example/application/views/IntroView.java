@@ -1,6 +1,6 @@
 package com.example.application.views;
 
-import com.example.application.EmailUtil;
+import com.example.application.SlackUtil;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -9,12 +9,8 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Properties;
 
 @PageTitle("Intro")
 @Route(value = "intro")
@@ -26,7 +22,7 @@ public class IntroView extends VerticalLayout {
         Button submitButton = new Button("Zatwierdź", event -> {
             String inputValue = inputField.getValue();
             try{
-                sendEmail(inputValue);
+                sendSlack(inputValue);
                 Text emailSentText = new Text("Czas wystartował!");
                 removeAll();
                 add(emailSentText);
@@ -41,33 +37,12 @@ public class IntroView extends VerticalLayout {
 
     }
 
-    private void sendEmail(String teamName) {
-        String subject = "Wystartował team " + teamName;
+    private void sendSlack(String teamName) throws Exception {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String timeString = LocalTime.now().format(formatter);
 
         String body = "Wystartował zespół " + teamName + ". Czas startu: " + timeString;
-
-        final String fromEmail = "spyroretrogra@onet.pl";
-        final String password = "DupaDupa2@";
-
-        System.out.println("SSLEmail Start");
-        Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.poczta.onet.pl");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
-
-        Authenticator auth = new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(fromEmail, password);
-            }
-        };
-
-        Session session = Session.getDefaultInstance(props, auth);
-        System.out.println("Session created");
-        EmailUtil.sendEmail(session,subject, body);
+        SlackUtil.sendToChannel(body);
     }
 
 }

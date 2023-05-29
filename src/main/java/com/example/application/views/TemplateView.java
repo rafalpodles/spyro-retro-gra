@@ -44,7 +44,7 @@ public class TemplateView extends VerticalLayout implements RouterLayout, HasUrl
                 Button submitButton = new Button("Zatwierdź hasło", e -> {
                     String enteredPassword = passwordField.getValue();
                     String[] passwords = finalData.getPassword().split(";");
-                    if (Arrays.stream(passwords).map(String::toLowerCase).toList().contains(enteredPassword.toLowerCase())) {
+                    if (Arrays.stream(passwords).map(String::toLowerCase).toList().contains(enteredPassword.toLowerCase().trim())) {
                         passwordCorrect(finalData);
                     } else {
                         Notification.show("Złe hasło!");
