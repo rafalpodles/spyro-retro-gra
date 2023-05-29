@@ -4,7 +4,7 @@ import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 public class SlackUtil {
-    private final static String slackUrl = "https://hooks.slack.com/services/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";
+    private final static String slackUrl = "https://hooks.slack.com/services/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";
 
     public static void sendToChannel(String message) throws Exception {
         HttpHeaders headers = new HttpHeaders();
