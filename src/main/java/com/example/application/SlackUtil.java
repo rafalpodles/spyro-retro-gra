@@ -2,9 +2,8 @@ package com.example.application;
 
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
-
 public class SlackUtil {
-    private final static String slackUrl = "https://hooks.slack.com/services/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";
+    static final String slackUrl = "changeit";
 
     public static void sendToChannel(String message) throws Exception {
         HttpHeaders headers = new HttpHeaders();
@@ -19,7 +18,7 @@ public class SlackUtil {
             System.out.println("All Good!");
 
         } else{
-            System.out.println(responseEntity.getStatusCode().toString());
+            System.out.println(responseEntity.getStatusCode());
             System.out.println(responseEntity.getBody());
             throw new Exception("Something was wrong!");
         }

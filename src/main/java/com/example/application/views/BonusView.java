@@ -20,6 +20,7 @@ import java.util.Properties;
 
 @Route("bonus")
 public class BonusView extends VerticalLayout {
+
     public BonusView() {
         Text text = new Text("Super, znaleźliście bonus. Otrzymujecie dodatkowy punkt! Podaj nazwę zespołu i zatwierdź.");
         TextField inputField = new TextField();
@@ -36,12 +37,10 @@ public class BonusView extends VerticalLayout {
 
     }
 
-    private void sendSlack(String teamName) throws Exception{
+    private void sendSlack(String teamName) throws Exception {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String timeString = LocalTime.now().format(formatter);
         String body = "Bonus dla teamu " + teamName + ". Czas osiągnięcia bonusu: " + timeString;
-        System.out.println("Sending to slack folloowing message:");
-        System.out.println(body);
         SlackUtil.sendToChannel(body);
     }
 
