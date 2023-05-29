@@ -82,6 +82,12 @@
             <artifactId>javax.mail</artifactId>
             <version>1.5.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-ses</artifactId>
+            <version>1.12.477</version>
+        </dependency>
+
 
 
     </dependencies>

@@ -42,7 +42,6 @@ public class IntroView extends VerticalLayout {
     }
 
     private void sendEmail(String teamName) {
-        String[] recipients = {"rpo@spyro-soft.com","ann@spyro-soft.com"};
         String subject = "Wystartował team " + teamName;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String timeString = LocalTime.now().format(formatter);
@@ -68,7 +67,7 @@ public class IntroView extends VerticalLayout {
 
         Session session = Session.getDefaultInstance(props, auth);
         System.out.println("Session created");
-        EmailUtil.sendEmail(session, recipients,subject, body);
+        EmailUtil.sendEmail(session,subject, body);
     }
 
 }
