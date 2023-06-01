@@ -14,11 +14,11 @@ public class ApplicationServiceInitListener
 
     @Override
     public void serviceInit(ServiceInitEvent event) {
-
+        ReachPoints.initPointReached(DataUtil.getAllPoints());
         List<String> allEndpoints = DataUtil.getAllEndpoints();
         RouteConfiguration configuration = RouteConfiguration.forApplicationScope();
-        for(String endpoint : allEndpoints){
-            configuration.setRoute(endpoint+"/Dupa", TemplateView.class);
+        for (String endpoint : allEndpoints) {
+            configuration.setRoute(endpoint + "/Dupa", TemplateView.class);
         }
 
     }

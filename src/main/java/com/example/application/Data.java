@@ -1,6 +1,7 @@
 package com.example.application;
 
 public class Data {
+    private String point;
     private String endpoint;
     private String message;
     private String password;
@@ -50,5 +51,17 @@ public class Data {
 
     public String getAlt() {
         return alt;
+    }
+
+    public String getPoint() {
+        return point;
+    }
+
+    public void setPoint(String point) {
+        this.point = point;
+    }
+
+    public void setAlt(String alt) {
+        this.alt = alt;
     }
 }

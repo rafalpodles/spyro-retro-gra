@@ -2,6 +2,8 @@ package com.example.application.views;
 
 import com.example.application.Data;
 import com.example.application.DataUtil;
+import com.example.application.ReachPoints;
+import com.example.application.SlackUtil;
 import com.example.application.views.main.MainView;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.UI;
@@ -12,6 +14,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.*;
 
+import java.text.MessageFormat;
 import java.util.Arrays;
 
 @Route(value = ":url")
@@ -46,6 +49,12 @@ public class TemplateView extends VerticalLayout implements RouterLayout, HasUrl
                     String[] passwords = finalData.getPassword().split(";");
                     if (Arrays.stream(passwords).map(String::toLowerCase).toList().contains(enteredPassword.toLowerCase().trim())) {
                         passwordCorrect(finalData);
+                        Integer pointCount = ReachPoints.addAndGetPoint(finalData.getPoint());
+                        try {
+                            SlackUtil.sendToChannel(MessageFormat.format("Punkt {0} został osiągnięty po raz {1} z poprawnym hasłem.", finalData.getPoint(), pointCount));
+                        } catch (Exception e1) {
+                            System.out.println("Cannot send slack with reached point.");
+                        }
                     } else {
                         Notification.show("Złe hasło!");
                     }

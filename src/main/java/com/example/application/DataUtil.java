@@ -33,6 +33,13 @@ public class DataUtil {
         return data.stream().map(Data::getEndpoint).collect(Collectors.toList());
     }
 
+    public static List<String> getAllPoints(){
+        if (data == null){
+            loadData();
+        }
+        return data.stream().map(Data::getPoint).collect(Collectors.toList());
+    }
+
 
     private static void loadData() {
         ObjectMapper objectMapper = new ObjectMapper();
