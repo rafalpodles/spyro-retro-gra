@@ -30,7 +30,7 @@
     "point": "C (Ciuchcia)",
     "endpoint": "Q2l1Y2hjaWE",
     "message": "Oj tak, lubił tutaj przesiadywać i prowadzić tę ciuchcię. Wsiadałem wtedy do wagonika i wyobrażałem sobie jak przemierzamy po torach odległe krainy. Nie wiem, czy wiecie, ale pod naszym składem ciągnie się coś ciekawego. Wiecie co to jest?",
-    "password": "bunkier",
+    "password": "bunkier;bunkry",
     "image": "/assets/Q2l1Y2hjaWE.png",
     "alt": "Surfer na siłowni pod chmurką",
     "hint": "O tak, to jest bunkier. Bunkrów tutaj jest pełno, są one bardzo niebezpieczne, nie można do nich wchodzić, dlatego są zamurowane. Jeśli będziecie bardzo spostrzegawczy, to możecie zdobyć dodatkowy punkt. Wracając do poszukiwań naszego przyjaciela, to lubił on bardzo niebezpieczne zajęcia. Jednym z nich było surfowanie. Może właśnie teraz surfuje?"
@@ -75,7 +75,7 @@
     "point": "H (Ptaki)",
     "endpoint": "UHRha2k",
     "message": "Znaleźliście! Ale niestety tylko ptaki. Naszego przyjaciela, mimo, że jest do nich bardzo podobny, bo również jest niezwykłą istotą, tutaj również nie ma. Powoli kończą mi się pomysły, gdzie go szukać. Chociaż... przypomina mi się jeszcze jedno ciekawe miejsce, gdzie go mogło wywiać. Do tego będzie nam potrzebna ilość szprych, które są w rowerkach, na których jadą ptaki.",
-    "password": "73",
+    "password": "73;72",
     "image": "/assets/UHRha2k.png",
     "alt": "Punkt widokowy",
     "hint": "Dobrze policzyliście! Teraz możemy udać się za zachód, by tam poszukać naszego nicponia z irokezem. Jest tam pewne miejsce, skąd bardzo często startował nasz kolega. Może jeszcze nie wystartował i da się go tam uchwycić?"
